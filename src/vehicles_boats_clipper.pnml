@@ -1,0 +1,314 @@
+/*
+#    GalizaTTD Sailing ships and other boats -  Copyright (C) 2022  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+
+/*Clipper*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_clipper_default_running_empty, "src/gfx/clipper/default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_default_still_empty, "src/gfx/clipper/default_still_empty.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_default_running_full, "src/gfx/clipper/default_running_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+}
+
+spriteset(spriteset_clipper_default_still_full, "src/gfx/clipper/default_still_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+
+}
+
+spriteset(spriteset_clipper_pass_running_empty, "src/gfx/clipper/pass_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_pass_still_empty, "src/gfx/clipper/pass_still_empty.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_pass_running_full, "src/gfx/clipper/pass_running_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+}
+
+spriteset(spriteset_clipper_pass_still_full, "src/gfx/clipper/pass_still_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+
+}
+
+
+spriteset(spriteset_clipper_bulk_running_empty, "src/gfx/clipper/bulk_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_bulk_still_empty, "src/gfx/clipper/bulk_still_empty.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_bulk_running_full, "src/gfx/clipper/bulk_running_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+}
+
+spriteset(spriteset_clipper_bulk_still_full, "src/gfx/clipper/bulk_still_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+
+}
+
+spriteset(spriteset_clipper_buymenu,"src/gfx/clipper/default_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_prev,"src/gfx/clipper/default_still_empty.png"){
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_default_depot,"src/gfx/clipper/default_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_bulk_depot,"src/gfx/clipper/bulk_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_pass_depot,"src/gfx/clipper/pass_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_clipper_default_still{
+	loading: [spriteset_clipper_default_still_empty, spriteset_clipper_default_still_full];
+	loaded: [spriteset_clipper_default_still_empty, spriteset_clipper_default_still_full];
+}
+
+spritegroup spritegroup_clipper_default_running{
+	loading: [spriteset_clipper_default_running_empty,spriteset_clipper_default_running_full];
+	loaded: [spriteset_clipper_default_running_empty,spriteset_clipper_default_running_full];
+}
+
+
+spritegroup spritegroup_clipper_pass_still{
+	loading: [spriteset_clipper_pass_still_empty, spriteset_clipper_pass_still_full];
+	loaded: [spriteset_clipper_pass_still_empty, spriteset_clipper_pass_still_full];
+}
+
+spritegroup spritegroup_clipper_pass_running{
+	loading: [spriteset_clipper_pass_running_empty,spriteset_clipper_pass_running_full];
+	loaded: [spriteset_clipper_pass_running_empty,spriteset_clipper_pass_running_full];
+}
+
+spritegroup spritegroup_clipper_bulk_still{
+	loading: [spriteset_clipper_bulk_still_empty, spriteset_clipper_bulk_still_full];
+	loaded: [spriteset_clipper_bulk_still_empty, spriteset_clipper_bulk_still_full];
+}
+
+spritegroup spritegroup_clipper_bulk_running{
+	loading: [spriteset_clipper_bulk_running_empty,spriteset_clipper_bulk_running_full];
+	loaded: [spriteset_clipper_bulk_running_empty,spriteset_clipper_bulk_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_clipper_default_move, current_speed) {
+ 	0 :   spritegroup_clipper_default_still; 
+ 	spritegroup_clipper_default_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_clipper_pass_move, current_speed) {
+ 	0 :   spritegroup_clipper_pass_still; 
+ 	spritegroup_clipper_pass_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_clipper_bulk_move, current_speed) {
+ 	0 :   spritegroup_clipper_bulk_still; 
+ 	spritegroup_clipper_bulk_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_clippercargo, cargo_type_in_veh) {
+ 	PASS :   return 120;
+ 	return 160;
+ }
+
+switch (FEAT_SHIPS, SELF, switch_clipper_default_depot,extra_callback_info1) {
+	0x10 : spriteset_clipper_default_depot;
+	0x11 : spriteset_clipper_default_depot;
+	0x12 : spriteset_clipper_default_depot;
+	switch_clipper_default_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_clipper_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_clipper_buymenu;
+	0x21 : spriteset_clipper_prev;
+	spriteset_clipper_buymenu;
+}
+
+switch (FEAT_SHIPS, SELF, switch_clipper_bulk_depot,extra_callback_info1) {
+	0x10 : spriteset_clipper_bulk_depot;
+	0x11 : spriteset_clipper_bulk_depot;
+	0x12 : spriteset_clipper_bulk_depot;
+	switch_clipper_bulk_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_clipper_pass_depot,extra_callback_info1) {
+	0x10 : spriteset_clipper_pass_depot;
+	0x11 : spriteset_clipper_pass_depot;
+	0x12 : spriteset_clipper_pass_depot;
+	switch_clipper_pass_move;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_clipper) {
+	property {
+		name : string(STR_CLIPPER_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1820,03,01);
+		reliability_decay : 15;
+		model_life : 65;
+		vehicle_life : 20;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_BULK);
+		loading_speed: 10;
+		cost_factor : 150 / 2;
+		running_cost_factor: 110;
+		cargo_age_period: 370;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 32 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 0.32;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 160;
+		sound_effect : sound("src/wav/bell_clipper.wav");
+	}
+	graphics {
+		purchase: switch_clipper_default_purchase;
+		additional_text: string(STR_CLIPPER_BUYMENU);
+		cargo_capacity:switch_clippercargo;
+		default: switch_clipper_default_depot;
+		PASS: switch_clipper_pass_depot;
+		COAL : switch_clipper_bulk_depot;
+		WOOD : switch_clipper_bulk_depot;
+		IORE : switch_clipper_bulk_depot;
+		WHEA : switch_clipper_bulk_depot;
+		MAIZ : switch_clipper_bulk_depot;
+		CORE : switch_clipper_bulk_depot;
+		AORE : switch_clipper_bulk_depot;
+		CERE : switch_clipper_bulk_depot;
+		CLAY : switch_clipper_bulk_depot;
+		COPR : switch_clipper_bulk_depot;
+		GRVL : switch_clipper_bulk_depot;
+		SAND : switch_clipper_bulk_depot;
+	}
+}

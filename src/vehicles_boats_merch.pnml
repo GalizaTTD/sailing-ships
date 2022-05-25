@@ -1,0 +1,313 @@
+/*
+#    GalizaTTD Sailing ships and other boats -  Copyright (C) 2022  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+
+/*Merchantman*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_merch_default_running_empty, "src/gfx/merch/default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_default_still_empty, "src/gfx/merch/default_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_default_running_full, "src/gfx/merch/default_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_merch_default_still_full, "src/gfx/merch/default_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_merch_bulk_running_empty, "src/gfx/merch/bulk_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_bulk_still_empty, "src/gfx/merch/bulk_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_bulk_running_full, "src/gfx/merch/bulk_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_merch_bulk_still_full, "src/gfx/merch/bulk_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+
+spriteset(spriteset_merch_pass_running_empty, "src/gfx/merch/pass_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_pass_still_empty, "src/gfx/merch/pass_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_pass_running_full, "src/gfx/merch/pass_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_merch_pass_still_full, "src/gfx/merch/pass_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_merch_buymenu,"src/gfx/merch/default_still_empty.png"){
+/*	[ 400,	64,	65,	16,	-100,	-10 ]*/
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_prev,"src/gfx/merch/default_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_default_depot,"src/gfx/merch/default_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_bulk_depot,"src/gfx/merch/bulk_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_pass_depot,"src/gfx/merch/pass_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+		
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_merch_default_still{
+	loading: [spriteset_merch_default_still_empty, spriteset_merch_default_still_full];
+	loaded: [spriteset_merch_default_still_empty, spriteset_merch_default_still_full];
+}
+
+spritegroup spritegroup_merch_default_running{
+	loading: [spriteset_merch_default_running_empty,spriteset_merch_default_running_full];
+	loaded: [spriteset_merch_default_running_empty,spriteset_merch_default_running_full];
+}
+
+
+spritegroup spritegroup_merch_bulk_still{
+	loading: [spriteset_merch_bulk_still_empty, spriteset_merch_bulk_still_full];
+	loaded: [spriteset_merch_bulk_still_empty, spriteset_merch_bulk_still_full];
+}
+
+
+spritegroup spritegroup_merch_bulk_running{
+	loading: [spriteset_merch_bulk_running_empty,spriteset_merch_bulk_running_full];
+	loaded: [spriteset_merch_bulk_running_empty,spriteset_merch_bulk_running_full];
+}
+
+spritegroup spritegroup_merch_pass_still{
+	loading: [spriteset_merch_pass_still_empty, spriteset_merch_pass_still_full];
+	loaded: [spriteset_merch_pass_still_empty, spriteset_merch_pass_still_full];
+}
+
+
+spritegroup spritegroup_merch_pass_running{
+	loading: [spriteset_merch_pass_running_empty,spriteset_merch_pass_running_full];
+	loaded: [spriteset_merch_pass_running_empty,spriteset_merch_pass_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_merch_default_move, current_speed) {
+ 	0 :   spritegroup_merch_default_still; 
+ 	spritegroup_merch_default_running;       
+ }
+
+
+ switch (FEAT_SHIPS, SELF , switch_merch_bulk_move, current_speed) {
+ 	0 :   spritegroup_merch_bulk_still; 
+ 	spritegroup_merch_bulk_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_merch_pass_move, current_speed) {
+ 	0 :   spritegroup_merch_pass_still; 
+ 	spritegroup_merch_pass_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_merchcargo, cargo_type_in_veh) {
+	PASS : 	return 80;
+ 	return 100;
+ }
+
+ switch (FEAT_SHIPS, SELF, switch_merch_default_depot,extra_callback_info1) {
+	0x10 : spriteset_merch_default_depot;
+	0x11 : spriteset_merch_default_depot;
+	0x12 : spriteset_merch_default_depot;
+	switch_merch_default_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_merch_bulk_depot,extra_callback_info1) {
+	0x10 : spriteset_merch_bulk_depot;
+	0x11 : spriteset_merch_bulk_depot;
+	0x12 : spriteset_merch_bulk_depot;
+	switch_merch_bulk_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_merch_pass_depot,extra_callback_info1) {
+	0x10 : spriteset_merch_pass_depot;
+	0x11 : spriteset_merch_pass_depot;
+	0x12 : spriteset_merch_pass_depot;
+	switch_merch_pass_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_merch_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_merch_buymenu;
+	0x21 : spriteset_merch_prev;
+	spriteset_merch_buymenu;
+}
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_merch) {
+	property {
+		name : string(STR_MERCH_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1750,07,01);
+		reliability_decay : 12;
+		model_life : 110;
+		vehicle_life : 40;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_BULK);
+		loading_speed: 25;
+		cost_factor : 88 / 2;
+		running_cost_factor: 80;
+		cargo_age_period: 370;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 25 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 0.4;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 100;
+		sound_effect : sound("src/wav/bell_merch.wav");
+	}
+	graphics {
+		purchase: switch_merch_default_purchase;
+		additional_text : string(STR_MERCH_BUYMENU);
+		cargo_capacity : switch_merchcargo;
+		default: switch_merch_default_depot;
+		PASS: switch_merch_pass_depot;
+		COAL : switch_merch_bulk_depot;
+		WOOD : switch_merch_bulk_depot;
+		IORE : switch_merch_bulk_depot;
+		WHEA : switch_merch_bulk_depot;
+		MAIZ : switch_merch_bulk_depot;
+		CORE : switch_merch_bulk_depot;
+		AORE : switch_merch_bulk_depot;
+		CERE : switch_merch_bulk_depot;
+		CLAY : switch_merch_bulk_depot;
+		COPR : switch_merch_bulk_depot;
+		GRVL : switch_merch_bulk_depot;
+		SAND : switch_merch_bulk_depot;
+	}
+}

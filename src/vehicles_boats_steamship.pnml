@@ -1,0 +1,227 @@
+/*
+#    GalizaTTD Sailing ships and other boats -  Copyright (C) 2022  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+
+/*Steamship*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_steam_default_running_empty, "src/gfx/steam/default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_default_still_empty, "src/gfx/steam/default_still_empty.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_default_running_full, "src/gfx/steam/default_running_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_default_still_full, "src/gfx/steam/default_still_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+
+}
+
+spriteset(spriteset_steam_mail_running_empty, "src/gfx/steam/mail_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_mail_still_empty, "src/gfx/steam/mail_still_empty.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_mail_running_full, "src/gfx/steam/mail_running_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_mail_still_full, "src/gfx/steam/mail_still_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+
+}
+
+spriteset(spriteset_steam_buymenu,"src/gfx/steam/default_still_empty.png"){
+	/* [ 600,	68,	75,	26,	-100,	-10 ] */
+	[ 600,	68,	150,	26,	-75,	-10 ]
+}
+
+spriteset(spriteset_steam_prev,"src/gfx/steam/default_still_empty.png"){
+	[ 600,	68,	150,	26,	-75,	-10 ]
+}
+
+spriteset(spriteset_steam_default_depot,"src/gfx/steam/default_still_empty.png"){
+/*	[ 600,	68,	75,	26,	-100,	-10 ]*/
+	[ 600,	68,	150,	26,	-37,	-10 ]
+}
+
+spriteset(spriteset_steam_mail_depot,"src/gfx/steam/mail_still_empty.png"){
+/*	[ 600,	68,	75,	26,	-100,	-10 ]*/
+	[ 600,	68,	75,	26,	-37,	-10 ]
+}		
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_steam_default_still{
+	loading: [spriteset_steam_default_still_empty, spriteset_steam_default_still_full];
+	loaded: [spriteset_steam_default_still_empty, spriteset_steam_default_still_full];
+}
+
+spritegroup spritegroup_steam_default_running{
+	loading: [spriteset_steam_default_running_empty,spriteset_steam_default_running_full];
+	loaded: [spriteset_steam_default_running_empty,spriteset_steam_default_running_full];
+}
+
+spritegroup spritegroup_steam_mail_still{
+	loading: [spriteset_steam_mail_still_empty, spriteset_steam_mail_still_full];
+	loaded: [spriteset_steam_mail_still_empty, spriteset_steam_mail_still_full];
+}
+
+spritegroup spritegroup_steam_mail_running{
+	loading: [spriteset_steam_mail_running_empty,spriteset_steam_mail_running_full];
+	loaded: [spriteset_steam_mail_running_empty,spriteset_steam_mail_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_steam_default_move, current_speed) {
+ 	0 :   spritegroup_steam_default_still; 
+ 	spritegroup_steam_default_running;       
+ }
+
+
+ switch (FEAT_SHIPS, SELF , switch_steam_mail_move, current_speed) {
+ 	0 :   spritegroup_steam_mail_still; 
+ 	spritegroup_steam_mail_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_steamcargo, cargo_type_in_veh) {
+ 	PASS :   return 240;
+	MAIL :   return 200;
+ 	return 200;
+}
+
+
+switch (FEAT_SHIPS, SELF, switch_steam_default_depot,extra_callback_info1) {
+	0x10 : spriteset_steam_default_depot;
+	0x11 : spriteset_steam_default_depot;
+	0x12 : spriteset_steam_default_depot;
+	switch_steam_default_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_steam_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_steam_buymenu;
+	0x21 : spriteset_steam_prev;
+	spriteset_steam_buymenu;
+}
+
+switch (FEAT_SHIPS, SELF, switch_steam_mail_depot,extra_callback_info1) {
+	0x10 : spriteset_steam_mail_depot;
+	0x11 : spriteset_steam_mail_depot;
+	0x12 : spriteset_steam_mail_depot;
+	switch_steam_mail_move;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_steam) {
+	property {
+		name : string(STR_STEAM_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1840,4,01);
+		reliability_decay : 10;
+		model_life : 60;
+		speed : 32 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 0.32;
+		vehicle_life : 40;
+		refittable_cargo_classes : bitmask(CC_PASSENGERS, CC_MAIL);
+		loading_speed: 5;
+		cost_factor : 200 / 2;
+		running_cost_factor: 200;
+		cargo_age_period: 740;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : PASS;
+		cargo_capacity : 240;
+		//sound_effect : SOUND_FACTORY_WHISTLE;
+		sound_effect : sound("src/wav/horn_steamship.wav");
+	}
+	graphics {
+		purchase: switch_steam_default_purchase;
+		additional_text: string(STR_STEAM_BUYMENU);
+		cargo_capacity:switch_steamcargo;
+		default: switch_steam_default_depot;
+		MAIL: switch_steam_mail_depot;
+		
+	}
+}
