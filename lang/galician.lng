@@ -1,0 +1,40 @@
+##grflangid 0x31
+##plural 0
+##gender m f
+# This is the Galician language file
+
+#Grf parameter strings
+STR_GRF_NAME : {TITLE} {VERSION}
+STR_GRF_DESCRIPTION : Barcos de vela e vapor para OpenTTD {} {COPYRIGHT}J Mitchell 2012
+STR_MIN_OPENTTD_VERSION  :Require OpenTTD >= 1.12.0
+
+STR_PARAM_NAME_PURCHASE_COST    	:Modificador do custo de compra
+STR_PARAM_DESC_PURCHASE_COST    	:Usa esta opción para modificar o custo de compra dos vehículos deste conxunto
+STR_PARAM_NAME_RUNNING_COST     	:Modificador dos custos operativos
+STR_PARAM_DESC_RUNNING_COST     	:Usa esta opción para modificar os custos operativos dos vehículos deste conxunto
+
+STR_PARAM_COST_H               		:Metade
+STR_PARAM_COST_N               		:Normal
+STR_PARAM_COST_D               		:Dobre
+
+#Names
+STR_CLIPPER_NAME 	:Clíper
+STR_PADDLES_NAME 	:Vapor con rodas de pás
+STR_MERCH_NAME		:Bricbarca
+STR_BARQUE_NAME		:Corveta
+STR_BRIG_NAME		:Bergantín
+STR_SCHON_NAME		:Goleta
+STR_STEAM_NAME		:Navío a vapor
+STR_WINDJ_NAME		:Rachaventos
+STR_KETCH_NAME		:Cachemarín
+
+#Buy menu
+STR_CLIPPER_BUYMENU :{BLACK}Propulsión: {GOLD}Veleiro de tres mastros Aparello de proa a popa
+STR_PADDLES_BUYMENU :{BLACK}Propulsión: {GOLD}Navío de tres mastros con rodas de pás a vapor para ventos lixeiros
+STR_MERCH_BUYMENU :{BLACK}Propulsión: {GOLD}Veleiro de tres mastros (trinquete, maior e mesana) con aparello de proa a popa con velas cadradas
+STR_BARQUE_BUYMENU :{BLACK}Propulsión: {GOLD}Veleiro de tres mastros (trinquete, maior e mesana) con velas cangrexa e escandalosa
+STR_BRIG_BUYMENU :{BLACK}Propulsión: {GOLD}Veleiro de dous mastros (trinquete e maior) con estais.
+STR_SCHON_BUYMENU :{BLACK}Propulsión: {GOLD}Veleiro de dous mastros con velas de coitelo
+STR_STEAM_BUYMENU :{BLACK}Propulsión: {GOLD}Navío a vapor con tres mastros(trinquete, maior e mesana) con aparello completo e un cuartro mastro de mesana con velas de coitelo
+STR_WINDJ_BUYMENU :{BLACK}Propulsión: {GOLD}Veleiro de catro mastros (trinquete, contra-trinquete, maior e mesana) con aparello completo e velas cadradas.
+STR_KETCH_BUYMENU :{BLACK}Propulsión: {GOLD}Veleiro pequeno con dous mastros(trinquete e maior)
