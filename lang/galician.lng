@@ -4,8 +4,8 @@
 # This is the Galician language file
 
 #Grf parameter strings
-STR_GRF_NAME : {TITLE} {VERSION}
-STR_GRF_DESCRIPTION : Barcos de vela e vapor para OpenTTD {} {COPYRIGHT}J Mitchell 2012
+STR_GRF_NAME :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :Barcos de vela e vapor para OpenTTD {} {COPYRIGHT}J Mitchell 2012
 STR_MIN_OPENTTD_VERSION  :Require OpenTTD >= 1.12.0
 
 STR_PARAM_NAME_PURCHASE_COST    	:Modificador do custo de compra
